@@ -1,0 +1,17 @@
+<%- include('../layouts/header') %>
+
+<section class="section">
+  <div class="container">
+    <div class="auth-card text-center">
+      <h1 class="section-heading mb-3">Delete item</h1>
+      <p>Are you sure you want to delete <strong><%= item.name %></strong> from your planner?</p>
+
+      <form method="post" action="/items/<%= item._id %>/delete" class="d-inline">
+        <button type="submit" class="btn btn-danger">Yes, delete</button>
+      </form>
+      <a href="/items" class="btn btn-outline-mystyle ms-2">Cancel</a>
+    </div>
+  </div>
+</section>
+
+<%- include('../layouts/footer') %>
