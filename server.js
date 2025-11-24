@@ -1,5 +1,6 @@
 // server.js
 // Entry point for my MyStyle Planner app
+require('dotenv').config(); // Load variables from .env into process.env
 
 const express = require('./config/express');
 const mongoose = require('./config/mongoose');
