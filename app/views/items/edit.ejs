@@ -3,6 +3,7 @@
 <section class="section">
   <div class="container">
     <div class="auth-card">
+        <!-- This page lets me edit an existing item. I basically pre-fill the form with the current values so the user (me)  doesn’t have to type everything from scratch again. all the fields pull data from the "item" object that the controller sends here.-->
       <h1 class="section-heading mb-3">Edit item</h1>
 
       <form method="post" action="/items/<%= item._id %>/edit">
@@ -55,3 +56,6 @@
 </section>
 
 <%- include('../layouts/footer') %>
+
+
+<!--ends-->
